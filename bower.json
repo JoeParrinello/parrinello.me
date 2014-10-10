@@ -1,0 +1,13 @@
+{
+  "name": "JosephParrinelloPersonalWebsite",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies":{
+		"bootstrap":"latest",
+		"font-awesome":"latest",
+		"animate.css":"latest",
+		"angular":"latest",
+		"angular-route":"latest"
+	}
+}
