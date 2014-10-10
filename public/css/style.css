@@ -153,6 +153,7 @@ body {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    
   }
 }
 
@@ -165,5 +166,13 @@ body {
 }
 
 .content{
-         margin-top:100px;
+         background-color: rgba(204, 204, 204, 0.92);
+         color: #292929;
+         -webkit-box-shadow: 0px 0px 75px 40px rgba(0,0,0,0.95);
+         -moz-box-shadow: 0px 0px 75px 40px rgba(0,0,0,0.95);
+         box-shadow: 0px 0px 75px 40px rgba(0,0,0,0.95);
+         min-height: 300px;
+         border-radius: 1em;
+         padding: 1em;
+         
 }

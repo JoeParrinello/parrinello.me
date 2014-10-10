@@ -4,15 +4,11 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
              templateUrl:'views/cover.html',
              controller: 'MainController'
   
-  }).when('/index.html',{
-             templateUrl:'views/cover.html',
-             controller: 'MainController'
-  
-  }).when('/home.html',{
+  }).when('/about',{
 			templateUrl:'views/home.html',
 			controller: 'MainController'
       
-	}).when('/connect.html',{
+	}).when('/connect',{
       templateUrl:'views/contact.html',
 			controller: 'MainController'
   });
