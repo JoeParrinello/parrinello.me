@@ -27,9 +27,9 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url('/assets/BlackWood.jpg');
-  background-size: 100%;
-  background-color: #333;
+  /*background-image: url('/assets/BlackWood.jpg');*/
+  background-color: #4F4564;
+  background-position:center;
 }
 body {
   color: #fff;
@@ -43,8 +43,6 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -165,14 +163,21 @@ body {
   }
 }
 
-.content{
-         background-color: rgba(204, 204, 204, 0.92);
-         color: #292929;
-         -webkit-box-shadow: 0px 0px 75px 40px rgba(0,0,0,0.95);
-         -moz-box-shadow: 0px 0px 75px 40px rgba(0,0,0,0.95);
-         box-shadow: 0px 0px 75px 40px rgba(0,0,0,0.95);
-         min-height: 300px;
-         border-radius: 1em;
-         padding: 1em;
-         
+.profImage{
+           background-image: url('/assets/ShoppedProfile.png');
+           background-position: 50% 50%;
+           background-size: auto 175px;
+           background-repeat: no-repeat;
+           border-radius: 50%;
+           -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+           width: 175px;
+           height: 175px;
+           margin-right: auto;
+           margin-left: auto;
+           -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
 }
+
+
