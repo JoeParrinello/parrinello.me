@@ -11,7 +11,14 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 	}).when('/connect',{
       templateUrl:'views/contact.html',
 			controller: 'MainController'
-  });
+      
+  }).when('/projects',{
+			templateUrl:'views/projects.html',
+			controller: 'ProjectController'
+      
+	}).otherwise({
+                redirectTo:'/' 
+	});
 
 	$locationProvider.html5Mode(true);
 

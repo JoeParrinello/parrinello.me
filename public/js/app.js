@@ -1,1 +1,1 @@
-angular.module('JoeApp',['ngRoute','appRoutes','MainCtrl','FrameCtrl']);
+angular.module('JoeApp',['ngRoute','appRoutes','MainCtrl','FrameCtrl', 'ProjectCtrl']);
