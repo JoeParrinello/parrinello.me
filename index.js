@@ -17,6 +17,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.post('/gitpull', function(req, res) {
   res.end();
+  console.log("Hey, Im going down for the git pull");
   function puts(error, stdout, stderr) {sys.puts(stdout)}
   exec("git reset --hard HEAD", puts);
   exec("git pull", puts);
