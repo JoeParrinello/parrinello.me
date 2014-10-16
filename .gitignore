@@ -3,3 +3,4 @@ node_modules
 public/libs
 config/secrets.js
 npm-debug.log
+public/dist
