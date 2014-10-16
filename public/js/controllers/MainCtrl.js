@@ -1,5 +1,5 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope, $location){
+angular.module('MainCtrl', []).controller('MainController', ['$scope','$location',function($scope, $location){
 
 
 
-});
+}]);
