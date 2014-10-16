@@ -4,7 +4,6 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var sys = require('sys');
 var exec = require('child_process').exec;
-var secrets = require('./config/secrets.js');
 
 
 var port = process.env.PORT || 80;
@@ -21,7 +20,7 @@ app.post('/gitpull', function(req, res) {
   function puts(error, stdout, stderr) {sys.puts(stdout)}
   exec("git reset --hard HEAD", puts);
   exec("git pull", puts);
-  
+
 });
 
 app.dirname = __dirname;
