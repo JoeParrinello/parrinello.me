@@ -14,5 +14,8 @@
     "github-webhook-handler": "^0.2.1",
     "method-override": "^2.2.0",
     "sys": "0.0.1"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13"
   }
 }
