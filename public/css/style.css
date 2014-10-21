@@ -142,7 +142,15 @@ body {
            -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
            -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
            box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+           -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
 }
+
+.profImage:hover{
+  -webkit-filter: grayscale(0%);
+
+}
+
 
 .left{
   text-align:right;
@@ -175,4 +183,31 @@ body {
 
 .icon-bar{
   background-color:white;
-  }
+}
+
+.projImage{
+           background-image: url('/assets/ShoppedProfile.png');
+           background-position: 50% 50%;
+           background-size: auto 125px;
+           background-repeat: no-repeat;
+           border-radius: 15%;
+           -webkit-border-radius: 15%;
+           -moz-border-radius: 15%;
+           width: 125px;
+           height: 125px;
+           /*margin-right: auto;
+           margin-left: auto;*/
+           -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+           -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+}
+.projRow{
+  padding-bottom:15px;
+  padding-top:15px;
+}
+.projRow:hover .projImage{
+  -webkit-filter: grayscale(0%);
+
+}
