@@ -1,0 +1,174 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: rgba(142, 68, 173,1.0);
+  background-position:center;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+
+/*
+ * Header
+ */
+.navbar-brand {
+  margin-bottom: 10px;
+}
+
+.nav-content > li {
+  display: inline-block;
+}
+.nav-content > li + li {
+  margin-left: 20px;
+}
+.nav-content > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  padding-bottom:5px;
+  border-bottom: 2px solid transparent;
+}
+.nav-content > li > a:hover,
+.nav-content > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.nav-content > .active > a,
+.nav-content > .active > a:hover,
+.nav-content > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.footer {
+  color: #999;
+  color: rgba(255,255,255,.5);
+  align-self: flex-end;
+  width: 100%;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .masthead,
+  .footer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    left:50%;
+    margin-left:-350px;
+  }
+  .masthead{
+    width: 700px;
+  }
+}
+
+.profImage{
+           background-image: url('/assets/ShoppedProfile.png');
+           background-position: 50% 50%;
+           background-size: auto 175px;
+           background-repeat: no-repeat;
+           border-radius: 50%;
+           -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+           width: 175px;
+           height: 175px;
+           margin-right: auto;
+           margin-left: auto;
+           -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+}
+
+.left{
+  text-align:right;
+}
+.right{
+ text-align:left;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-view-container{
+    min-height:100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+.content-view {
+  width:100%;
+  margin-top:auto;
+  margin-bottom:auto;
+
+}
+.navbar {
+  align-self:flex-start;
+
+}
