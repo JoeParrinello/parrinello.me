@@ -8,9 +8,10 @@ angular.module('FrameCtrl', []).controller('FrameController', ['$scope','$locati
                                                        $rootScope.aboutPage = $location.path()=='/about';
                                                        $rootScope.connectPage = $location.path()=='/connect';
                                                        $rootScope.projectPage = $location.path()=='/projects';
-                                                       
+
                              }
-                             
+
   });
+  $rootScope.on = false;
 
 }]);

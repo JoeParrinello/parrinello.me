@@ -20,7 +20,6 @@ app.post('/gitpull', function(req, res) {
   function puts(error, stdout, stderr) {sys.puts(stdout)}
   exec("git reset --hard HEAD", puts);
   exec("git pull", puts);
-  exec("bower install --allow-root", puts);
   exec("grunt", puts);
 
 });
