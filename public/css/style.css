@@ -127,7 +127,8 @@ body {
   }
 }
 
-.profImage{
+.profImage
+{
            background-image: url('/assets/ShoppedProfile.png');
            background-position: 50% 50%;
            background-size: auto 175px;
@@ -142,13 +143,15 @@ body {
            -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
            -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
            box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-           -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-           -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+           -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+           transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
 }
 
-.profImage:hover{
-  -webkit-filter: grayscale(0%);
+.profImage.ng-enter
+{
 
+  width: 0px;
+  height: 0px;
 }
 
 
