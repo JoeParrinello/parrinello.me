@@ -206,8 +206,16 @@ body {
 .projRow{
   padding-bottom:15px;
   padding-top:15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  background-color: rgba(0,0,0,0);
+  -webkit-transition: all .6s ease;
 }
 .projRow:hover .projImage{
   -webkit-filter: grayscale(0%);
 
+}
+.projRow:hover{
+  background-color: rgba(0,0,0,.50);
 }
