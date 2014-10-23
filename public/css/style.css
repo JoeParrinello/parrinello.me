@@ -279,7 +279,6 @@ body {
 @media (min-width: 992px) {
   .footer {
     left:50%;
-    margin-left:-350px;
   }
   .masthead{
     width: 700px;
