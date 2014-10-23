@@ -123,7 +123,9 @@ body {
 
 .profImage.ng-enter
 {
-
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
   width: 0px;
   height: 0px;
 }
@@ -179,12 +181,14 @@ body {
            box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
            -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
            -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+           transition: all .6s ease;
 }
 .projRow{
   padding-bottom:15px;
   padding-top:15px;
   background-color: rgba(0,0,0,0);
   -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 .projRow:hover .projImage{
   -webkit-filter: grayscale(0%);
@@ -193,6 +197,31 @@ body {
 .projRow:hover{
   background-color: rgba(0,0,0,.50);
 }
+
+.hoverColor{ 
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;    
+}
+
+.fa-github-alt:hover{
+color:black;
+}
+.fa-linkedin:hover{
+color:#069;
+}
+.fa-steam:hover{
+color:gray;
+}
+.fa-envelope:hover{
+color:red;
+}
+.fa-google-plus:hover{
+color:#d34836;
+}
+.fa-twitter:hover{
+color:#00aced;
+}
+
 /*
  * Affix and center
  */
