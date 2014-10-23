@@ -116,38 +116,38 @@ body {
            margin-right: auto;
            margin-left: auto;
            animation-name:popshake;
-           animation-duration: 1.5s;
-           animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);          
+           animation-duration: 1s;
+           animation-timing-function: easein;
            animation-duration-count: 1;
            -webkit-animation-name:popshake;
-           -webkit-animation-duration: 1.5s;
-           -webkit-animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);          
+           -webkit-animation-duration: 1s;
+           -webkit-animation-timing-function: easein;
            -webkit-animation-duration-count: 1;
            -moz-animation-name:popshake;
-           -moz-animation-duration: 1.5s;
-           -moz-animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);          
+           -moz-animation-duration: 1s;
+           -moz-animation-timing-function: easein;
            -moz-animation-duration-count: 1;
 }
-@keyframes popshake { 
+@keyframes popshake {
            0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
            width: 0px;
-           height: 0px;} 
+           height: 0px;}
            100% { width: 175px;
            height: 175px;
            box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
 }
-@-webkit-keyframes popshake { 
+@-webkit-keyframes popshake {
            0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
            width: 0px;
-           height: 0px;} 
+           height: 0px;}
            100% { width: 175px;
            height: 175px;
            box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
 }
-@-moz-keyframes popshake { 
+@-moz-keyframes popshake {
            0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
            width: 0px;
-           height: 0px;} 
+           height: 0px;}
            100% { width: 175px;
            height: 175px;
            box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
@@ -230,9 +230,9 @@ body {
   background-color: rgba(0,0,0,.50);
 }
 
-.hoverColor{ 
+.hoverColor{
   -webkit-transition: all .6s ease;
-  transition: all .6s ease;    
+  transition: all .6s ease;
 }
 
 .fa-github-alt:hover{
@@ -268,7 +268,7 @@ color:#00aced;
   .footer {
     width: 100%;
   }
-  
+
   .projRow {
              border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -290,5 +290,3 @@ color:#00aced;
   -moz-border-radius: 10px;
   }
 }
-
-
