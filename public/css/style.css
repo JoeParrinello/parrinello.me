@@ -1,6 +1,6 @@
 /*
- * Globals
- */
+* Globals
+*/
 
 /* Links */
 a,
@@ -21,8 +21,8 @@ a:hover {
 
 
 /*
- * Base structure
- */
+* Base structure
+*/
 
 html,
 body {
@@ -38,8 +38,8 @@ body {
 
 
 /*
- * Header
- */
+* Header
+*/
 .navbar-brand {
   margin-bottom: 10px;
 }
@@ -77,8 +77,8 @@ body {
 
 
 /*
- * Cover
- */
+* Cover
+*/
 
 .cover {
   padding: 0 20px;
@@ -90,8 +90,8 @@ body {
 
 
 /*
- * Footer
- */
+* Footer
+*/
 
 .footer {
   color: #999;
@@ -103,71 +103,71 @@ body {
 
 .profImage
 {
-           background-image: url('/assets/ShoppedProfile.png');
-           background-position: 50% 50%;
-           background-size: auto 175px;
-           background-repeat: no-repeat;
-           border-radius: 50%;
-           -webkit-border-radius: 50%;
-           -moz-border-radius: 50%;
-           width: 175px;
-           height: 175px;
-           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-           margin-right: auto;
-           margin-left: auto;
-           animation-name:popshake;
-           animation-duration: 1s;
-           animation-timing-function: easein;
-           animation-duration-count: 1;
-           -webkit-animation-name:popshake;
-           -webkit-animation-duration: 1s;
-           -webkit-animation-timing-function: easein;
-           -webkit-animation-duration-count: 1;
-           -moz-animation-name:popshake;
-           -moz-animation-duration: 1s;
-           -moz-animation-timing-function: easein;
-           -moz-animation-duration-count: 1;
+  background-image: url('/assets/ShoppedProfile.png');
+  background-position: 50% 50%;
+  background-size: auto 175px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  margin-right: auto;
+  margin-left: auto;
+  animation-name:popshake;
+  animation-duration: 1s;
+  animation-timing-function: easein;
+  animation-duration-count: 1;
+  -webkit-animation-name:popshake;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: easein;
+  -webkit-animation-duration-count: 1;
+  -moz-animation-name:popshake;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: easein;
+  -moz-animation-duration-count: 1;
 }
 @keyframes popshake {
-           0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-           width: 0px;
-           height: 0px;}
-           100% { width: 175px;
-           height: 175px;
-           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
+  0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+    width: 0px;
+    height: 0px;}
+    100% { width: 175px;
+      height: 175px;
+      box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
 }
 @-webkit-keyframes popshake {
-           0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-           width: 0px;
-           height: 0px;}
-           100% { width: 175px;
-           height: 175px;
-           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
-}
+      0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        width: 0px;
+        height: 0px;}
+        100% { width: 175px;
+          height: 175px;
+          box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
+        }
 @-moz-keyframes popshake {
-           0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-           width: 0px;
-           height: 0px;}
-           100% { width: 175px;
-           height: 175px;
-           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
+          0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+            width: 0px;
+            height: 0px;}
+            100% { width: 175px;
+              height: 175px;
+              box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
 }
 
-/*.profImage.ng-enter
-{
-  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-  width: 0px;
-  height: 0px;
-}*/
+            /*.profImage.ng-enter
+            {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+            width: 0px;
+            height: 0px;
+            }*/
 
 
 .left{
   text-align:right;
 }
 .right{
- text-align:left;
+  text-align:left;
 }
 .center-block {
   display: block;
@@ -175,10 +175,10 @@ body {
   margin-right: auto;
 }
 .content-view-container{
-    min-height:100%;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
+  min-height:100%;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
 
 }
 .content-view {
@@ -197,23 +197,23 @@ body {
 }
 
 .projImage{
-           background-image: url('/assets/ShoppedProfile.png');
-           background-position: 50% 50%;
-           background-size: auto 125px;
-           background-repeat: no-repeat;
-           border-radius: 15%;
-           -webkit-border-radius: 15%;
-           -moz-border-radius: 15%;
-           width: 125px;
-           height: 125px;
-           /*margin-right: auto;
-           margin-left: auto;*/
-           -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-           -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-           -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-           -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-           transition: all .6s ease;
+  background-image: url('/assets/ShoppedProfile.png');
+  background-position: 50% 50%;
+  background-size: auto 125px;
+  background-repeat: no-repeat;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  width: 125px;
+  height: 125px;
+  /*margin-right: auto;
+  margin-left: auto;*/
+  -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+  transition: all .6s ease;
 }
 .projRow{
   padding-bottom:15px;
@@ -236,27 +236,27 @@ body {
 }
 
 .fa-github-alt:hover{
-color:black;
+  color:black;
 }
 .fa-linkedin:hover{
-color:#069;
+  color:#069;
 }
 .fa-steam:hover{
-color:gray;
+  color:gray;
 }
 .fa-envelope:hover{
-color:red;
+  color:red;
 }
 .fa-google-plus:hover{
-color:#d34836;
+  color:#d34836;
 }
 .fa-twitter:hover{
-color:#00aced;
+  color:#00aced;
 }
 
 /*
- * Affix and center
- */
+* Affix and center
+*/
 
 @media (min-width: 768px) {
 
@@ -270,9 +270,9 @@ color:#00aced;
   }
 
   .projRow {
-             border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
   }
 }
 
@@ -285,8 +285,8 @@ color:#00aced;
     width: 700px;
   }
   .projRow{
-             border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
   }
 }
