@@ -101,32 +101,6 @@ body {
 }
 
 
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .masthead,
-  .footer {
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .footer {
-    left:50%;
-    margin-left:-350px;
-  }
-  .masthead{
-    width: 700px;
-  }
-}
-
 .profImage
 {
            background-image: url('/assets/ShoppedProfile.png');
@@ -209,9 +183,6 @@ body {
 .projRow{
   padding-bottom:15px;
   padding-top:15px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   background-color: rgba(0,0,0,0);
   -webkit-transition: all .6s ease;
 }
@@ -222,3 +193,40 @@ body {
 .projRow:hover{
   background-color: rgba(0,0,0,.50);
 }
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .masthead,
+  .footer {
+    width: 100%;
+  }
+  
+  .projRow {
+             border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    left:50%;
+    margin-left:-350px;
+  }
+  .masthead{
+    width: 700px;
+  }
+  .projRow{
+             border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  }
+}
+
