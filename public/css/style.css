@@ -89,6 +89,7 @@ body {
 }
 .customNavbar{
               width:100%;
+              /*background-color:#272822*/
 }
 
 /*
@@ -266,7 +267,7 @@ body {
 
 .hoverColor{
   -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  transition: all .35s ease;
 }
 
 .fa-github-alt:hover{
