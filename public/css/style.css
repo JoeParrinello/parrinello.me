@@ -113,6 +113,7 @@ body {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -o-border-radius: 50%;
   width: 174px;
   height: 174px;
   box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
@@ -130,6 +131,10 @@ body {
   -moz-animation-duration: 0.5s;
   -moz-animation-timing-function: easein;
   -moz-animation-duration-count: 1;
+  -o-animation-name:popshake;
+  -o-animation-duration: 0.5s;
+  -o-animation-timing-function: easein;
+  -o-animation-duration-count: 1;
 }
 @keyframes popshake {
   0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
@@ -155,16 +160,6 @@ body {
               height: 175px;
               box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
 }
-
-            /*.profImage.ng-enter
-            {
-            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-            width: 0px;
-            height: 0px;
-            }*/
-
 
 .left{
   text-align:right;
@@ -201,6 +196,10 @@ body {
   -moz-animation-duration: 0.3s;
   -moz-animation-timing-function: easein;
   -moz-animation-duration-count: 1;
+  -o-animation-name:fadeIn;
+  -o-animation-duration: 0.3s;
+  -o-animation-timing-function: easein;
+  -o-animation-duration-count: 1;
 
 }
 .content-view.ng-leave{
@@ -239,15 +238,22 @@ body {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -o-border-radius: 50%;
   width: 125px;
   height: 125px;
   /*margin-right: auto;
   margin-left: auto;*/
   -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
   -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  -o-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
   box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
   -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+  -moz-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -moz-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+  -o-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -o-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+  filter: grayscale(100%);
   transition: all .6s ease;
 }
 .projRow{
@@ -255,10 +261,15 @@ body {
   padding-top:15px;
   background-color: rgba(0,0,0,0);
   -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
   transition: all .6s ease;
 }
 .projRow:hover .projImage{
   -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
 
 }
 .projRow:hover{
@@ -267,6 +278,8 @@ body {
 
 .hoverColor{
   -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
   transition: all .35s ease;
 }
 
@@ -308,6 +321,7 @@ body {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
+    -o-border-radius: 0px;
   }
 }
 
@@ -319,5 +333,6 @@ body {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
+    -o-border-radius: 10px;
   }
 }
