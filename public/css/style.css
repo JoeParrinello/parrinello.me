@@ -306,6 +306,11 @@ body {
 * Affix and center
 */
 
+.centerProjectImage {
+ margin-left:auto;
+ margin-right:auto;
+}
+
 @media (min-width: 768px) {
 
   .masthead {
