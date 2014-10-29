@@ -108,14 +108,14 @@ body {
 {
   background-image: url('/assets/ShoppedProfile.png');
   background-position: 50% 50%;
-  background-size: auto 175px;
+  background-size: auto 300px;
   background-repeat: no-repeat;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
-  width: 174px;
-  height: 174px;
+  width: 300px;
+  height: 300px;
   box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
   margin-right: auto;
   margin-left: auto;
@@ -140,24 +140,24 @@ body {
   0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
     width: 0px;
     height: 0px;}
-    100% { width: 174px;
-      height: 174px;
+    100% { width: 300px;
+      height: 300px;
       box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
 }
 @-webkit-keyframes popshake {
       0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
         width: 0px;
         height: 0px;}
-        100% { width: 174px;
-          height: 174px;
+        100% { width: 300px;
+          height: 300px;
           box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
         }
 @-moz-keyframes popshake {
           0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
             width: 0px;
             height: 0px;}
-            100% { width: 175px;
-              height: 175px;
+            100% { width: 300px;
+              height: 300px;
               box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);}
 }
 
