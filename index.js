@@ -18,9 +18,9 @@ app.post('/gitpull', function(req, res) {
   res.end();
   console.log("Hey, Im going down for the git pull");
   function puts(error, stdout, stderr) {sys.puts(stdout)}
-  exec("git reset --hard HEAD", puts);
-  exec("git pull", puts);
-  exec("/usr/local/bin/grunt", puts);
+  exec("git reset --hard HEAD",{cwd:'/srv/parrinello.me'}, puts);
+  exec("git pull",{cwd:'/srv/parrinello.me'}, puts);
+  exec("/usr/local/bin/grunt",{cwd:'/srv/parrinello.me'}, puts);
 
 });
 
