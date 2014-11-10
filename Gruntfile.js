@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
       dist: {
-        src: ['public/js/**/*.js'],
+        src: ['public/js/**/*.js','!public/js/googleAnalytics.js'],
         dest: 'public/dist/<%= pkg.name %>.js'
       }
     },
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'public/js/**/*.js'],
+      files: ['Gruntfile.js', 'public/js/**/*.js','!public/js/googleAnalytics.js'],
       options: {
         // options here to override JSHint defaults
         globals: {
