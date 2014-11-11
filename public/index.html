@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -41,14 +42,14 @@
           </div>
           <div class="collapse navbar-collapse" id="navSelector">
             <ul class="nav navbar-nav navbar-right nav-content">
-              <li  ng-class="{active: aboutPage}"><a href="/about">About</a></li>
-              <li  ng-class="{active: projectPage}"><a href="/projects">Projects</a></li>
-              <li  ng-class="{active: connectPage}"><a href='/connect'>Connect</a></li>
+              <li  ng-class="{active: aboutPage}"><a class="navigation" href="/about">About</a></li>
+              <li  ng-class="{active: projectPage}"><a class="navigation" href="/projects">Projects</a></li>
+              <li  ng-class="{active: connectPage}"><a class="navigation" href='/connect'>Connect</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="content-view" ng-view onload="true">
+      <div class="content-view" ng-view>
 
       </div>
       <div class="footer">
