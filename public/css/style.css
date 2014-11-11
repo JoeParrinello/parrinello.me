@@ -253,11 +253,11 @@ body {
   -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
   -o-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
   box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-  /*-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
   -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-  /*-moz-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -moz-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
   -moz-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-  /*-o-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -o-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
   -o-transition: all .6s ease; /* Fade to color for Chrome and Safari */
   filter: grayscale(100%);
   transition: all .6s ease;
@@ -272,12 +272,11 @@ body {
   transition: all .6s ease;
 }
 
-/*noinspection CssInvalidPropertyValue*/
+/*noinspection CssInvalidPropertyValue, CssInvalidFunction*/
 .projRow:hover .projImage{
-  /*-webkit-filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);*/
-  /*noinspection CssInvalidFunction*/
+  -o-filter: grayscale(0%);
   filter: grayscale(0%);
 
 }
