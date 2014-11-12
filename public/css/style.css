@@ -377,5 +377,7 @@ a.navigation{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
+    margin-right:10px;
+    margin-left:10px;
   }
 }
