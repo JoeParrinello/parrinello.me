@@ -310,6 +310,23 @@ a.navigation{
   box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
   cursor:pointer;
 }
+
+
+
+.hoverColor{
+  margin-top:0px;
+}
+
+
+/*
+* Affix and center
+*/
+
+.centerProjectImage {
+ margin-left:auto;
+ margin-right:auto;
+}
+
 @media (min-width:700px){
   .friendImage{
     -webkit-transition: all .4s ease;
@@ -320,42 +337,16 @@ a.navigation{
   .friendImage:hover{
     margin-top:-10px;
   }
-}
 
-
-.hoverColor{
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .35s ease;
-}
-
-.fa-github-alt:hover{
-  color:black;
-}
-.fa-linkedin:hover{
-  color:#069;
-}
-.fa-steam:hover{
-  color:gray;
-}
-.fa-envelope:hover{
-  color:red;
-}
-.fa-google-plus:hover{
-  color:#d34836;
-}
-.fa-twitter:hover{
-  color:#00aced;
-}
-
-/*
-* Affix and center
-*/
-
-.centerProjectImage {
- margin-left:auto;
- margin-right:auto;
+  .hoverColor{
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .hoverColor:hover{
+    margin-top:-10px;
+  }
 }
 
 @media (min-width: 768px) {
