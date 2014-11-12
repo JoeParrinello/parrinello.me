@@ -14,6 +14,6 @@ angular.module('FrameCtrl', []).controller('FrameController', ['$scope','$locati
   });
   $rootScope.on = false;
   $scope.$on('$viewContentLoaded', function(event){
-    $window.ga('send','pageview',{page:$locaton.path()});
+    $window.ga('send','pageview',{page:$location.path()});
   });
 }]);
