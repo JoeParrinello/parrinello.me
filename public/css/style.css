@@ -311,12 +311,14 @@ a.navigation{
   cursor:pointer;
 }
 @media (min-width:700px){
-  .friendImage:hover{
-    margin-top:-10px;
+  .friendImage{
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
+  }
+  .friendImage:hover{
+    margin-top:-10px;
   }
 }
 
