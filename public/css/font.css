@@ -2,3 +2,7 @@
     font-family: newsGothic;
     src: url(assets/newsgoth-cn-bt.ttf);
 }
+
+body{
+  font-family: newsGothic !important;
+}
