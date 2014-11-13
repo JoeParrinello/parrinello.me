@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   background-color: rgba(236, 240, 241,1.0);
-  font-family: Oxygen;
+  font-family: Lato;
 }
 body {
   color: #000;
@@ -37,7 +37,11 @@ body {
 }
 
 h1, h2, h3{
-  letter-spacing: 2px;
+  letter-spacing: 0.02em;
+}
+
+p{
+  font-family: 'PT serif'
 }
 
 /*
@@ -291,7 +295,7 @@ a.navigation{
 
 }
 .projRow:hover{
-  background-color: rgba(0,0,0,.50);
+  background-color: rgba(0,0,0,.40);
 }
 
 .friendImage{
