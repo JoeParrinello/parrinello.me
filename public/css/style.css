@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #000;
 }
 
 /* Custom default button */
@@ -27,21 +27,25 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: rgba(41, 128, 185,1.0);
-  background-position:center;
+  background-color: rgba(236, 240, 241,1.0);
+  font-family: Oxygen;
 }
 body {
-  color: #fff;
+  color: #000;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
+h1, h2, h3{
+  letter-spacing: 2px;
+}
 
 /*
 * Header
 */
 .navbar-brand {
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .nav-content > li {
@@ -54,23 +58,25 @@ body {
   padding-right: 0;
   padding-left: 0;
   font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: #000; /* IE8 proofing */
+  color: rgba(0,0,0,.75);
   padding-bottom:5px;
   border-bottom: 2px solid transparent;
+  letter-spacing:1px;
 }
 .nav-content > li > a:hover,
 .nav-content > li > a:focus {
   background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: #000;
+  border-bottom-color: rgba(0,0,0,.25);
 }
 .nav-content > .active > a,
 .nav-content > .active > a:hover,
 .nav-content > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
+  font-weight: bold;
+
+  color: #000;
+  border-bottom-color: #000;
 }
 
 a.navigation{
@@ -102,8 +108,8 @@ a.navigation{
 */
 
 .footer {
-  color: #999;
-  color: rgba(255,255,255,.5);
+  color: #000;
+  color: rgba(0,0,0,.5);
   /*noinspection CssInvalidPropertyValue*/
   align-self: -webkit-flex-end;
   align-self: flex-end;
