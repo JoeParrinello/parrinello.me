@@ -1,4 +1,10 @@
 @font-face {
-    font-family: newsGothic;
-    src: url(assets/newsgoth-cn-bt.ttf);
+    font-family: Cicle;
+    src: url("assets/CicleFina.ttf");
+}
+
+@font-face {
+    font-family: Cicle;
+    src: url("assets/CicleGordita.ttf");
+    font-weight: bold;
 }
