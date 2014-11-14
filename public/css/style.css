@@ -28,21 +28,21 @@ html,
 body {
   height: 100%;
   background-color: rgba(236, 240, 241,1.0);
-  font-family: Lato;
+  font-family: Lato, Helvetica;
+  font-size:15px;
 }
 body {
   color: #000;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 h1, h2, h3{
   letter-spacing: 0.02em;
 }
 
-p{
+/*p{
   font-family: 'PT serif'
-}
+}*/
 
 /*
 * Header
@@ -79,6 +79,8 @@ p{
 .nav-content > .active > a:focus {
   color: #000;
   border-bottom-color: #000;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
 }
 
 a.navigation{
