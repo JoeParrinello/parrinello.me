@@ -296,6 +296,25 @@ a.navigation{
  margin-right:auto;
 }
 
+.aboutImage{
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('/assets/ShoppedProfile.png');
+  background-position: 50% 50%;
+  background-size: auto 150px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  -o-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+}
+
 @media (min-width:700px){
   .friendImage{
     -webkit-transition: all .4s ease;
@@ -315,6 +334,15 @@ a.navigation{
   }
   .hoverColor:hover{
     margin-top:-10px;
+  }
+  .aboutText{
+    display:table-cell;
+    vertical-align: middle;
+  }
+
+  .aboutTextParent{
+    display: table;
+    min-height: 150px;
   }
 }
 
