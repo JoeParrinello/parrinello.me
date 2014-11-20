@@ -28,8 +28,6 @@ html,
 body {
   height: 100%;
   background-color: rgba(189, 195, 199,1.0);
-  background-image: url('/assets/smokey.jpeg');
-  background-position: center;
   background-size: cover;
   font-family: Lato, Helvetica, sans-serif;
   font-size:15px;
@@ -114,8 +112,8 @@ a.navigation{
   font-weight: bold;
 }
 .customNavbar{
-              width:100%;
-              /*background-color:#272822*/
+  width:100%;
+  /*background-color:#272822*/
 }
 
 /*
@@ -172,41 +170,22 @@ a.navigation{
 
 /*noinspection CssInvalidPropertyValue*/
 .content-view {
-  width:100%;
-  margin-top:auto;
-  margin-bottom:auto;
-  opacity:1;
-  animation-name:fadeIn;
-  animation-duration: 0.5s;
-  animation-timing-function: easein;
-  -webkit-animation-name:fadeIn;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-timing-function: easein;
-  -moz-animation-name:fadeIn;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-timing-function: easein;
-  -o-animation-name:fadeIn;
-  -o-animation-duration: 0.5s;
-  -o-animation-timing-function: easein;
-
-}
-.content-view.ng-leave{
- opacity:0;
- height:0;
- padding:0;
- margin:0;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 1;
 }
 @keyframes fadeIn {
-           0% {opacity:0;}
-           100% {opacity:1;}
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 @-webkit-keyframes fadeIn {
-           0% {opacity:0;}
-           100% {opacity:1;}
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 @-moz-keyframes fadeIn {
-           0% {opacity:0;}
-           100% {opacity:1;}
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 .navbar {
@@ -303,8 +282,8 @@ a.navigation{
 */
 
 .centerProjectImage {
- margin-left:auto;
- margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .aboutImage{
@@ -326,7 +305,7 @@ a.navigation{
   box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
 }
 
-@media (min-width:700px){
+@media (min-width: 768px) {
   .friendImage{
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
@@ -355,9 +334,11 @@ a.navigation{
     display: table;
     min-height: 150px;
   }
-}
 
-@media (min-width: 768px) {
+  body{
+    background-image: url('/assets/smokey.jpeg');
+    background-position: center;
+  }
 
   .nav-content > li:last-of-type {
     margin-right: 15px;
@@ -378,6 +359,29 @@ a.navigation{
     -moz-border-radius: 0;
     -o-border-radius: 0;
   }
+  /*noinspection CssInvalidPropertyValue*/
+  .content-view{
+    animation-name:fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: easein;
+    -webkit-animation-name:fadeIn;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: easein;
+    -moz-animation-name:fadeIn;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-timing-function: easein;
+    -o-animation-name:fadeIn;
+    -o-animation-duration: 0.5s;
+    -o-animation-timing-function: easein;
+
+  }
+  .content-view.ng-leave{
+    opacity:0;
+    height:0;
+    padding:0;
+    margin:0;
+  }
+
 }
 
 @media (min-width: 992px) {
