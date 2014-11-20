@@ -68,9 +68,7 @@ h1, h2, h3{
 .nav-content > li + li {
   margin-left: 20px;
 }
-.nav-content > li:last-of-type {
-  margin-right: 15px;
-}
+
 .nav-content > li > a {
   padding-right: 0;
   padding-left: 0;
@@ -360,6 +358,10 @@ a.navigation{
 }
 
 @media (min-width: 768px) {
+
+  .nav-content > li:last-of-type {
+    margin-right: 15px;
+  }
 
   .masthead {
     position: fixed;
