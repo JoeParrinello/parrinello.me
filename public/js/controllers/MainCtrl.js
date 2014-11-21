@@ -5,7 +5,7 @@ angular.module('MainCtrl', []).controller('MainController', ['$rootScope','$scop
   },100);
 
   $scope.goToPage = function(link){
-    window.open(link,'_newtab');
+    window.open(link,'_blank');
   };
 
 }]);
