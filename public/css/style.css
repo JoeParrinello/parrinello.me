@@ -27,13 +27,12 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: rgba(189, 195, 199,1.0);
-  background-size: cover;
   font-family: Lato, Helvetica, sans-serif;
   font-size:15px;
 }
 body {
   color: #000;
+  background-color: rgba(189, 195, 199,0.0);
   text-align: center;
 }
 
@@ -335,8 +334,8 @@ a.navigation{
     min-height: 150px;
   }
 
-  body{
-    background-image: url('/assets/smokey.jpeg');
+  html{
+    background: url('/assets/smokey.jpeg') no-repeat center center fixed;
     background-position: center;
   }
 
