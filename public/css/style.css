@@ -32,7 +32,7 @@ body {
 }
 body {
   color: #000;
-  background-color: rgba(255, 255, 255,1.0);
+  background-color: rgba(189, 195, 199,0.0);
   text-align: center;
 }
 
@@ -77,10 +77,15 @@ h1, h2, h3{
   border-bottom: 2px solid transparent;
   letter-spacing:1px;
 }
-/*.nav-content > li > a:focus*/
+
+.nav-content > li > a:focus,
 .nav-content > li > a:hover
 {
   background-color: transparent;
+}
+
+.nav-content > li > a:hover
+{
   border-bottom-color: #000;
   border-bottom-color: rgba(0,0,0,.25);
 }

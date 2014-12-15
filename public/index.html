@@ -45,7 +45,7 @@
             <ul class="nav navbar-nav navbar-right nav-content">
               <!--<li  ng-class="{active: aboutPage}"><a class="navigation" href="/about">About</a></li>-->
               <li  ng-class="{active: projectPage}"><a class="navigation" href="/projects">Projects</a></li>
-              <li  ng-class="{active: resumePage}"><a target="_blank" class="navigation" href='/resume' onclick='_gaq.push(["_trackEvent","Download","PDF",this.href]);'>R&eacutesum&eacute</a></li>
+              <li  ng-class="{active: resumePage}"><a target="_blank" class="navigation" href='/resume' onclick='ga("send","event","PDF","Download", "Resume");'>R&eacutesum&eacute</a></li>
               <li  ng-class="{active: connectPage}"><a class="navigation" href='/connect'>Connect</a></li>
             </ul>
           </div>
