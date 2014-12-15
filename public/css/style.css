@@ -77,8 +77,9 @@ h1, h2, h3{
   border-bottom: 2px solid transparent;
   letter-spacing:1px;
 }
-.nav-content > li > a:hover,
-.nav-content > li > a:focus {
+/*.nav-content > li > a:focus*/
+.nav-content > li > a:hover
+{
   background-color: transparent;
   border-bottom-color: #000;
   border-bottom-color: rgba(0,0,0,.25);
