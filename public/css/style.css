@@ -49,7 +49,8 @@ h1, h2, h3{
 */
 
 .content-view-container{
-  background-color: rgba(236, 240, 241,1.0);
+  background-color: rgba(255, 255, 255,1.0);
+  /*background-color: rgba(236, 240, 241,1.0);*/
   -webkit-box-shadow: 0 0 5px 1px;
   -moz-box-shadow: 0 0 5px 1px;
   box-shadow: 0 0 5px 1px;
