@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(methodOverride('X-HTTP-Method-Override'));
-app.use(express.compress());
+app.use(compression());
 app.use(express.static(__dirname + '/public'));
 
 app.post('/gitpull', function(req, res) {
