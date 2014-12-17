@@ -6,7 +6,7 @@ var sys = require('sys');
 var exec = require('child_process').exec;
 
 
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
