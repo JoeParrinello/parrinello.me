@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.9.0",
+    "compression": "^1.2.2",
     "express": "^4.9.6",
     "github-webhook-handler": "^0.2.1",
     "grunt": "^0.4.5",

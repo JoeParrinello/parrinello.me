@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var sys = require('sys');
 var exec = require('child_process').exec;
+var compression = require('compression');
 
 
 var port = process.env.PORT || 3001;
