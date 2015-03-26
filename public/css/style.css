@@ -390,6 +390,9 @@ a.navigation{
     margin:0;
   }
 
+  .navbar-right {
+      margin-right: 0;
+  }
 }
 
 @media (min-width: 992px) {
