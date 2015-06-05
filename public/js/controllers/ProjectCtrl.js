@@ -8,7 +8,7 @@ angular.module('ProjectCtrl', []).controller('ProjectController', ['$scope', fun
         },
         {
             title: "Java DES Cryptosystem",
-            description: "Created for CS 408 - Cryptography. Created all the component parts for a naive DES cryptosystem. Unable to be posted online due to restrictions placed on the source code.",
+            description: "Created for CS 408 - Cryptography & Internet Security. Created all the component parts for a naive DES cryptosystem. Unable to be posted online due to restrictions placed on the source code.",
             imageURL: '/assets/JavaClip.png',
             link: ""
         },
