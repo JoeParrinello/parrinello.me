@@ -1,6 +1,18 @@
 angular.module('ProjectCtrl', []).controller('ProjectController', ['$scope', function ($scope) {
     $scope.projects = [
         {
+            title: "Java LongInteger ADT",
+            description: "Created for CS 435 - Advanced Data Structure & Algorithm Design. Tasked with creating an abstract data type that can model numbers larger than the traditional int or double. The numbers were designed to be compared to numbers, basic arithmetic, and exponentiation. Had to be designed in a way where the number could be implemented with either a Singly Linked List, Doubly Linked List, or Array. Source code can not be put online due to restrictions placed by the instructor.",
+            imageURL: '/assets/JavaClip.png',
+            link: ""
+        },
+        {
+            title: "Java DES Cryptosystem",
+            description: "Created for CS 408 - Cryptography. Created all the component parts for a naive DES cryptosystem. Unable to be posted online due to restrictions placed on the source code.",
+            imageURL: '/assets/JavaClip.png',
+            link: ""
+        },
+        {
             title: "Jimmy Bob's Car-a-palooza",
             description: "This stemmed from a project for my Introductions to Database Class, CS431. The design specification was for a simple POS unit for a car dealership to handle customer sales. My friend Trevor and I took it a bit farther, and decided to implement some extra technologies for practice. The front end is written as a single page application in AngularJS, where the backend is a Laravel setup, using MySQL database.",
             imageURL: '/assets/JimmyBob.png',
@@ -26,7 +38,9 @@ angular.module('ProjectCtrl', []).controller('ProjectController', ['$scope', fun
         }
     ];
     $scope.goToPage = function (project) {
-        window.open(project.link, '_newtab');
+        if (project.link !== ""){
+            window.open(project.link, '_newtab');
+        }
     };
 
     //{title:"This Personal Website", description:'Backend in Node.js and ExpressJS, with a frontend written with AngularJS and Twitter Bootstrap, this was my first experiment using Angular in a personal projects. I\'ve been toying with Angular and CSS3 animations, which you can see on the Home Page and this projects page.', imageURL:'/assets/WebsiteClip.png', link:"https://github.com/Taevis662/parrinello.me"},
