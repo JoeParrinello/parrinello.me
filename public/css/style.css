@@ -19,7 +19,6 @@ a:hover {
     border: 1px solid #fff;
 }
 
-
 /*
 * Base structure
 */
@@ -28,15 +27,16 @@ html,
 body {
     height: 100%;
     font-family: Lato, Helvetica, sans-serif;
-    font-size:15px;
+    font-size: 15px;
 }
+
 body {
     color: #000;
-    background-color: rgba(189, 195, 199,0.0);
+    background-color: rgba(189, 195, 199, 0.0);
     text-align: center;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     letter-spacing: 0.02em;
 }
 
@@ -48,13 +48,14 @@ h1, h2, h3{
 * Header
 */
 
-.content-view-container{
-    background-color: rgba(255, 255, 255,1.0);
+.content-view-container {
+    background-color: rgba(255, 255, 255, 1.0);
     /*background-color: rgba(236, 240, 241,1.0);*/
     -webkit-box-shadow: 0 0 5px 1px;
     -moz-box-shadow: 0 0 5px 1px;
     box-shadow: 0 0 5px 1px;
 }
+
 .navbar-brand {
     margin-bottom: 10px;
     letter-spacing: 1px;
@@ -63,6 +64,7 @@ h1, h2, h3{
 .nav-content > li {
     display: inline-block;
 }
+
 .nav-content > li + li {
     margin-left: 20px;
 }
@@ -72,40 +74,37 @@ h1, h2, h3{
     padding-left: 0;
     font-size: 16px;
     color: #000; /* IE8 proofing */
-    color: rgba(0,0,0,.75);
-    padding-bottom:5px;
+    color: rgba(0, 0, 0, .75);
+    padding-bottom: 5px;
     border-bottom: 2px solid transparent;
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
 
 .nav-content > li > a:focus,
-.nav-content > li > a:hover
-{
+.nav-content > li > a:hover {
     background-color: transparent;
 }
 
-.nav-content > li > a:hover
-{
+.nav-content > li > a:hover {
     border-bottom-color: #000;
-    border-bottom-color: rgba(0,0,0,.25);
+    border-bottom-color: rgba(0, 0, 0, .25);
 }
 
 /*.nav-content > .active > a:focus */
 .nav-content > .active > a,
-.nav-content > .active > a:hover{
+.nav-content > .active > a:hover {
     color: #000;
     border-bottom-color: #000;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 
 }
 
-a.navigation{
+a.navigation {
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
-
 
 /*
 * Cover
@@ -114,12 +113,14 @@ a.navigation{
 .cover {
     padding: 0 20px;
 }
+
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;
 }
-.customNavbar{
-    width:100%;
+
+.customNavbar {
+    width: 100%;
     /*background-color:#272822*/
 }
 
@@ -129,13 +130,12 @@ a.navigation{
 
 .footer {
     color: #000;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
     /*noinspection CssInvalidPropertyValue*/
     align-self: -webkit-flex-end;
     align-self: flex-end;
     width: 100%;
 }
-
 
 .profImage {
     background-image: url('/assets/ProfessionalProfile.jpg');
@@ -153,25 +153,28 @@ a.navigation{
     margin-left: auto;
 }
 
-.left{
-    text-align:right;
+.left {
+    text-align: right;
 }
-.right{
-    text-align:left;
+
+.right {
+    text-align: left;
 }
+
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.content-view-container{
-    min-height:100%;
+
+.content-view-container {
+    min-height: 100%;
     display: flex;
     display: -webkit-flex;
-    flex-direction:column;
-    -webkit-flex-direction:column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
 
-    align-items:center;
+    align-items: center;
 
 }
 
@@ -182,32 +185,47 @@ a.navigation{
     margin-bottom: auto;
     opacity: 1;
 }
+
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .navbar {
     /*noinspection CssInvalidPropertyValue*/
-    align-self:-webkit-flex-start;
-    align-self:flex-start;
+    align-self: -webkit-flex-start;
+    align-self: flex-start;
 
 }
 
-.icon-bar{
-    background-color:black;
+.icon-bar {
+    background-color: black;
 }
 
 /*noinspection CssInvalidPropertyValue,CssInvalidFunction*/
-.projImage{
+.projImage {
     background-image: url('/assets/ShoppedProfile.png');
     background-position: 50% 50%;
     background-size: auto 125px;
@@ -220,10 +238,10 @@ a.navigation{
     height: 125px;
     /*margin-right: auto;
     margin-left: auto;*/
-    -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    -o-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
     -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
     -moz-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
@@ -233,30 +251,32 @@ a.navigation{
     filter: grayscale(100%);
     transition: all .6s ease;
 }
-.projRow{
-    padding-bottom:15px;
-    padding-top:15px;
-    background-color: rgba(0,0,0,0);
+
+.projRow {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0);
     -webkit-transition: all .6s ease;
     -moz-transition: all .6s ease;
     -o-transition: all .6s ease;
     transition: all .6s ease;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*noinspection CssInvalidPropertyValue, CssInvalidFunction*/
-.projRow:hover .projImage{
+.projRow:hover .projImage {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -o-filter: grayscale(0%);
     filter: grayscale(0%);
 
 }
-.projRow:hover{
-    background-color: rgba(0,0,0,.40);
+
+.projRow:hover {
+    background-color: rgba(0, 0, 0, .40);
 }
 
-.friendImage{
+.friendImage {
     background-image: url('/assets/ShoppedProfile.png');
     background-position: 50% 50%;
     background-size: auto 100px;
@@ -269,32 +289,29 @@ a.navigation{
     height: 100px;
     margin-right: auto;
     margin-left: auto;
-    margin-top:0;
-    -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    -o-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    cursor:pointer;
+    margin-top: 0;
+    -webkit-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
-
-
-.hoverColor{
-    text-shadow: 1px 2px 1px rgba(0,0,0,.5);
-    margin-top:0;
+.hoverColor {
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .5);
+    margin-top: 0;
 }
-
 
 /*
 * Affix and center
 */
 
 .centerProjectImage {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.aboutImage{
+.aboutImage {
     margin-left: auto;
     margin-right: auto;
     background-image: url('/assets/ShoppedProfile.png');
@@ -307,43 +324,46 @@ a.navigation{
     -o-border-radius: 50%;
     width: 150px;
     height: 150px;
-    -webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    -moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    -o-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
-    box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {
-    .friendImage{
+    .friendImage {
         -webkit-transition: all .4s ease;
         -moz-transition: all .4s ease;
         -o-transition: all .4s ease;
         transition: all .4s ease;
-    }
-    .friendImage:hover{
-        margin-top:-10px;
     }
 
-    .hoverColor{
+    .friendImage:hover {
+        margin-top: -10px;
+    }
+
+    .hoverColor {
         -webkit-transition: all .4s ease;
         -moz-transition: all .4s ease;
         -o-transition: all .4s ease;
         transition: all .4s ease;
     }
-    .hoverColor:hover{
-        margin-top:-10px;
+
+    .hoverColor:hover {
+        margin-top: -10px;
     }
-    .aboutText{
-        display:table-cell;
+
+    .aboutText {
+        display: table-cell;
         vertical-align: middle;
     }
 
-    .aboutTextParent{
+    .aboutTextParent {
         display: table;
         min-height: 150px;
     }
 
-    html{
+    html {
         background: url('/assets/smokey.jpeg') no-repeat center center fixed;
         background-position: center;
         background-size: cover;
@@ -357,6 +377,7 @@ a.navigation{
         position: fixed;
         top: 0;
     }
+
     .masthead,
     .footer {
         width: 100%;
@@ -368,27 +389,29 @@ a.navigation{
         -moz-border-radius: 0;
         -o-border-radius: 0;
     }
+
     /*noinspection CssInvalidPropertyValue*/
-    .content-view{
-        animation-name:fadeIn;
+    .content-view {
+        animation-name: fadeIn;
         animation-duration: 0.5s;
         animation-timing-function: easein;
-        -webkit-animation-name:fadeIn;
+        -webkit-animation-name: fadeIn;
         -webkit-animation-duration: 0.5s;
         -webkit-animation-timing-function: easein;
-        -moz-animation-name:fadeIn;
+        -moz-animation-name: fadeIn;
         -moz-animation-duration: 0.5s;
         -moz-animation-timing-function: easein;
-        -o-animation-name:fadeIn;
+        -o-animation-name: fadeIn;
         -o-animation-duration: 0.5s;
         -o-animation-timing-function: easein;
 
     }
-    .content-view.ng-leave{
-        opacity:0;
-        height:0;
-        padding:0;
-        margin:0;
+
+    .content-view.ng-leave {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
     }
 
     .navbar-right {
@@ -397,15 +420,16 @@ a.navigation{
 }
 
 @media (min-width: 992px) {
-    .masthead{
+    .masthead {
         width: 700px;
     }
-    .projRow{
+
+    .projRow {
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -o-border-radius: 10px;
-        margin-right:10px;
-        margin-left:10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
