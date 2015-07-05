@@ -1,4 +1,4 @@
-FROM dockerfile/nodejs-bower-grunt
+FROM digitallyseamless/nodejs-bower-grunt
 
 ONBUILD ADD package.json /app/
 ONBUILD RUN npm install
