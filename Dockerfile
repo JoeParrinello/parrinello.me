@@ -11,7 +11,7 @@ RUN npm install
 COPY bower.json .bowerrc* /usr/src/app/
 RUN bower install --allow-root
 COPY . /usr/src/app/
-RUN grunt build
+RUN grunt default
 ENV PORT 5001
 
 
