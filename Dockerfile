@@ -1,4 +1,6 @@
-FROM digitallyseamless/nodejs-bower-grunt
+FROM dockerfile/nodejs
+
+RUN npm install -g bower grunt-cli
 
 ONBUILD ADD package.json /app/
 ONBUILD RUN npm install
@@ -16,5 +18,5 @@ ENV PORT 5001
 
 
 EXPOSE 5001
-
+WORKDIR /app
 CMD ["node","index.js"]
