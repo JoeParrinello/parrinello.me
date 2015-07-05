@@ -9,7 +9,7 @@ ONBUILD ADD bower.json /app/
 ONBUILD ADD .bowerrc /app/
 ONBUILD RUN bower install --allow-root
 
-ONBUILD . /app
+ONBUILD ADD . /app
 
 ONBUILD RUN grunt build
 
