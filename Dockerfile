@@ -2,21 +2,21 @@ FROM google/nodejs
 
 RUN npm install -g bower grunt-cli
 
-ONBUILD ADD package.json /app/
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Onbuild instructions
+ONBUILD COPY package.json /usr/src/app/
 ONBUILD RUN npm install
-
-ONBUILD ADD . /app
-
-ONBUILD ADD bower.json /app/
-ONBUILD ADD .bowerrc /app/
+ONBUILD COPY bower.json .bowerrc* /usr/src/app/
 ONBUILD RUN bower install --allow-root
-
-ONBUILD RUN grunt build
+ONBUILD COPY . /usr/src/app/
+ONBUILD RUN [[ -f "Gruntfile.js" ]] && grunt build || /bin/true
+ONBUILD ENV NODE_ENV production
 
 ENV PORT 5001
 
 
 
 EXPOSE 5001
-WORKDIR /app
 CMD ["node","index.js"]
