@@ -1,6 +1,12 @@
 angular.module('ProjectCtrl', []).controller('ProjectController', ['$scope', function ($scope) {
     $scope.projects = [
         {
+            title: "OnTap",
+            description: "IRC Bot coded in Ruby, with some dabbling in Docker. Used on the #hardorange IRC Channel. Used as a joke \"reward\" system on the channel.",
+            imageURL: '/assets/BeerTap.jpg',
+            link: "https://github.com/JoeParrinello/OnTap"
+        },
+        {
             title: "Java LongInteger ADT",
             description: "Created for CS 435 - Advanced Data Structure & Algorithm Design. Tasked with creating an abstract data type that can model numbers larger than the traditional int or double. The numbers were designed to be compared to numbers, basic arithmetic, and exponentiation. Had to be designed in a way where the number could be implemented with either a Singly Linked List, Doubly Linked List, or Array. Source code can not be put online due to restrictions placed by the instructor.",
             imageURL: '/assets/JavaClip.png',
