@@ -124,6 +124,10 @@ a.navigation {
     /*background-color:#272822*/
 }
 
+.subtext-font {
+    font-size: 21px;
+}
+
 /*
 * Footer
 */
@@ -138,7 +142,7 @@ a.navigation {
 }
 
 .profImage {
-    background-image: url('/assets/ProfessionalProfile.jpg');
+    background-image: url('/assets/OutdoorCasualPic.jpg');
     background-position: 50% 50%;
     background-size: auto 275px;
     background-repeat: no-repeat;
