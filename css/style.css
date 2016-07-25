@@ -230,7 +230,7 @@ a.navigation {
 
 /*noinspection CssInvalidPropertyValue,CssInvalidFunction*/
 .projImage {
-    background-image: url('/assets/ShoppedProfile.png');
+    background-image: url('/assets/cherries.jpg');
     background-position: 50% 50%;
     background-size: auto 125px;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ a.navigation {
 }
 
 .friendImage {
-    background-image: url('/assets/ShoppedProfile.png');
+    background-image: url('/assets/cherries.jpg');
     background-position: 50% 50%;
     background-size: auto 100px;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ a.navigation {
 .aboutImage {
     margin-left: auto;
     margin-right: auto;
-    background-image: url('/assets/ShoppedProfile.png');
+    background-image: url('/assets/cherries.jpg');
     background-position: 50% 50%;
     background-size: auto 150px;
     background-repeat: no-repeat;
