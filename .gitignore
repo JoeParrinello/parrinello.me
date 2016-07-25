@@ -1,8 +1,7 @@
 
 node_modules
-public/libs
-config/secrets.js
+libs
 npm-debug.log
-public/dist
+dist
 .idea
 .DS_Store
