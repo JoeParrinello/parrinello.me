@@ -1,66 +1,81 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var cssmin = require('gulp-cssmin');
-var rename = require('gulp-rename');
-var htmlmin = require('gulp-htmlmin');
-var htmlreplace = require('gulp-html-replace');
-var webserver = require('gulp-webserver');
-var pump = require('pump');
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
+const htmlmin = require('gulp-htmlmin');
+const htmlreplace = require('gulp-html-replace');
+const webserver = require('gulp-webserver');
+const cleanCSS = require('gulp-clean-css');
 
-gulp.task('default', ['js', 'cssmin', 'html-replace', 'htmlmin-views', 'libs', 'assets'], function() {});
+const paths = {
+	scripts: {
+		src: './js/**/*.js',
+		dest: '/dist/'
+	},
+	styles: {
+		src: '/css/**/*.css',
+		dest: './dist/'
+	},
+	html: {
+		src: './views/**/*.html',
+		dest: '/dist/views'
+	},
+	libs: {
+		src: './libs/**/*',
+		dest: './dist/libs/',
+	},
+	assets: {
+		src: './assets/**/*',
+		dest: './dist/assets/',
+	}
+};
 
-gulp.task('js', function() {
-    return gulp.src('./js/**/*.js')
-        .pipe(concat('app.js'))
-        .pipe(uglify())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./dist/'));
-});
+function js() {
+	return gulp.src(paths.scripts.src)
+		.pipe(concat('app.js'))
+		.pipe(uglify())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest(paths.scripts.dest));
+}
 
-gulp.task('lint', function() {
-   return gulp.src('./js/**/*.js')
-       .pipe(jshint())
-       .pipe(jshint.reporter('default', { verbose: true}));
-});
+function lint() {
+	return gulp.src(paths.scripts.src)
+		.pipe(jshint())
+		.pipe(jshint.reporter('default', {verbose: true}));
+}
 
-gulp.task('cssmin', function() {
-   return gulp.src('./css/**/*.css')
-       .pipe(cssmin())
-       .pipe(rename({suffix: '.min'}))
-       .pipe(gulp.dest('./dist/'));
-});
+function cssmin() {
+	return gulp.src(paths.styles.src)
+		.pipe(cleanCSS({compatability: 'ie8'}))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest(paths.styles.dest));
+}
 
-gulp.task('htmlmin-views', function(){
-    return gulp.src('./views/**/*.html')
-        .pipe(htmlmin({collapseWhitespace:true}))
-        .pipe(gulp.dest('./dist/views/'));
-});
+function htmlminviews() {
+	return gulp.src(paths.html.src)
+		.pipe(htmlmin({collapseWhitespace: true}))
+		.pipe(gulp.dest(paths.html.dest));
+}
 
-gulp.task('html-replace', function(){
-   return gulp.src('./index.html')
-       .pipe(htmlreplace({
-           'css':'style.min.css',
-           'js':'app.min.js'
-       }))
-       .pipe(gulp.dest('./dist/'));
-});
+function html_replace() {
+	return gulp.src('./index.html')
+		.pipe(htmlreplace({
+			'css': 'style.min.css',
+			'js': 'app.min.js'
+		}))
+		.pipe(gulp.dest('./dist/'));
+}
 
-gulp.task('libs', function() {
-   return gulp.src('./libs/**/*')
-       .pipe(gulp.dest('./dist/libs/'));
-});
+function libs() {
+	return gulp.src(paths.libs.src)
+		.pipe(gulp.dest(paths.libs.dest));
+}
 
-gulp.task('assets', function() {
-   return gulp.src('./assets/**/*')
-       .pipe(gulp.dest('./dist/assets/'));
-});
+function assets() {
+	return gulp.src(paths.assets.src)
+		.pipe(gulp.dest(paths.assets.dest));
+}
 
-gulp.task('serve', function() {
-   return gulp.src('./dist/')
-       .pipe(webserver({
-            open:true
-        }));
-});
+const build = gulp.series(gulp.parallel(cssmin, js), html_replace, htmlminviews, gulp.parallel(libs, assets));
 
-
+exports.default =  build;
