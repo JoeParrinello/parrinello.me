@@ -1,9 +1,9 @@
+const connect = require('gulp-connect');
 const del = require('del');
 const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const htmlmin = require('gulp-htmlmin');
 const minifyCss = require('gulp-clean-css');
-const server = require('gulp-webserver');
 const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
 
@@ -51,20 +51,10 @@ async function clean_del() {
 
 exports.clean_del = clean_del;
 
-exports.server = function() {
-	gulp.src('.')
-	  .pipe(server({
-		livereload: true,
-		open: true,
-		port: 8080
-	  }));
-  };
+exports.server = async function() {
+	return connect.server({port:8080});
+};
 
-exports.min_server = gulp.series(build, () => {
-gulp.src('dist')
-	.pipe(server({
-	livereload: true,
-	open: true,
-	port: 8081
-	}));
+exports.min_server = gulp.series(build, async () => {
+	return connect.server({root: 'dist', port:8081});
 });
