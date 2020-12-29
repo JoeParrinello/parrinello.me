@@ -18,6 +18,8 @@ angular.module('FrameCtrl', []).controller('FrameController', ['$scope', '$locat
     });
     $rootScope.on = false;
     $scope.$on('$viewContentLoaded', function () {
-        $window.ga('send', 'pageview', {page: $location.path()});
+        if (typeof($window.ga) !== 'undefined') {
+            $window.ga('send', 'pageview', {page: $location.path()});
+        }
     });
 }]);

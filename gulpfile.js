@@ -1,28 +1,16 @@
+const cssnano = require('gulp-cssnano');
+const del = require('del');
 const gulp = require('gulp');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
-const rename = require('gulp-rename');
+const gulpIf = require('gulp-if');
 const htmlmin = require('gulp-htmlmin');
-const htmlreplace = require('gulp-html-replace');
-const webserver = require('gulp-webserver');
-const cleanCSS = require('gulp-clean-css');
+const server = require('gulp-webserver');
+const uglify = require('gulp-uglify');
+const useref = require('gulp-useref');
 
 const paths = {
-	scripts: {
-		src: './js/**/*.js',
-		dest: './dist/'
-	},
-	styles: {
-		src: './css/**/*.css',
-		dest: './dist/'
-	},
 	html: {
 		src: './views/**/*.html',
 		dest: './dist/views/'
-	},
-	libs: {
-		src: './libs/**/*',
-		dest: './dist/libs/',
 	},
 	assets: {
 		src: './assets/**/*',
@@ -30,45 +18,22 @@ const paths = {
 	}
 };
 
-function js() {
-	return gulp.src(paths.scripts.src)
-		.pipe(concat('app.js'))
-		.pipe(uglify())
-		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest(paths.scripts.dest));
-}
-
-function lint() {
-	return gulp.src(paths.scripts.src)
-		.pipe(jshint())
-		.pipe(jshint.reporter('default', {verbose: true}));
-}
-
-function cssmin() {
-	return gulp.src(paths.styles.src)
-		.pipe(cleanCSS({compatability: 'ie8'}))
-		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest(paths.styles.dest));
+function minimize() {
+	return gulp.src('./index.html')
+		.pipe(useref({
+			assets(content, target) {
+				return content.replace('assets', target);
+			}
+		}))
+		.pipe(gulpIf('*.js', uglify()))
+		.pipe(gulpIf('*.css', cssnano()))
+		.pipe(gulp.dest('dist'));
 }
 
 function htmlminviews() {
 	return gulp.src(paths.html.src)
 		.pipe(htmlmin({collapseWhitespace: true}))
-		.pipe(gulp.dest(paths.html.dest));
-}
-
-function html_replace() {
-	return gulp.src('./index.html')
-		.pipe(htmlreplace({
-			'css': 'style.min.css',
-			'js': 'app.min.js'
-		}))
-		.pipe(gulp.dest('./dist/'));
-}
-
-function libs() {
-	return gulp.src(paths.libs.src)
-		.pipe(gulp.dest(paths.libs.dest));
+		.pipe(gulp.dest((paths.html.dest)));
 }
 
 function assets() {
@@ -76,6 +41,30 @@ function assets() {
 		.pipe(gulp.dest(paths.assets.dest));
 }
 
-const build = gulp.series(gulp.parallel(cssmin, js), html_replace, htmlminviews, gulp.parallel(libs, assets));
+const build = gulp.series(minimize, htmlminviews, assets);
 
-exports.default =  build;
+exports.default = build;
+
+async function clean_del() {
+	return del.sync('dist');
+}
+
+exports.clean_del = clean_del;
+
+exports.server = function() {
+	gulp.src('.')
+	  .pipe(server({
+		livereload: true,
+		open: true,
+		port: 8080
+	  }));
+  };
+
+exports.min_server = gulp.series(build, () => {
+gulp.src('dist')
+	.pipe(server({
+	livereload: true,
+	open: true,
+	port: 8081
+	}));
+});
