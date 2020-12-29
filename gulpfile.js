@@ -1,8 +1,8 @@
-const cssnano = require('gulp-cssnano');
 const del = require('del');
 const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const htmlmin = require('gulp-htmlmin');
+const minifyCss = require('gulp-clean-css');
 const server = require('gulp-webserver');
 const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
@@ -26,7 +26,7 @@ function minimize() {
 			}
 		}))
 		.pipe(gulpIf('*.js', uglify()))
-		.pipe(gulpIf('*.css', cssnano()))
+		.pipe(gulpIf('*.css', minifyCss()))
 		.pipe(gulp.dest('dist'));
 }
 
