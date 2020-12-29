@@ -10,15 +10,15 @@ const cleanCSS = require('gulp-clean-css');
 const paths = {
 	scripts: {
 		src: './js/**/*.js',
-		dest: '/dist/'
+		dest: './dist/'
 	},
 	styles: {
-		src: '/css/**/*.css',
+		src: './css/**/*.css',
 		dest: './dist/'
 	},
 	html: {
 		src: './views/**/*.html',
-		dest: '/dist/views'
+		dest: './dist/views/'
 	},
 	libs: {
 		src: './libs/**/*',
